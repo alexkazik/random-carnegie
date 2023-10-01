@@ -1,0 +1,44 @@
+@mixin city($bg) {
+  color: #FCF9E9;
+  background-color: $bg;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.west {
+  @include city(#CAB78E);
+}
+
+.midwest {
+  @include city(#C24831);
+}
+
+.east {
+  @include city(#93667D);
+}
+
+.south {
+  @include city(#6AA25B);
+}
+
+.seed_input {
+  text-align: center;
+}
+
+.seed_input_hidden {
+  display: none;
+}
+
+.hidden {
+  visibility:hidden;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1 0 auto;
+  }
+}

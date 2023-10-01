@@ -1,0 +1,19 @@
+[build]
+release = true
+
+[watch]
+ignore = [".idea"]
+
+[serve]
+address = "127.0.0.1"
+port = 52785
+
+[[hooks]]
+stage = "pre_build"
+command = "cargo"
+command_arguments = ["run", "--bin", "version"]
+
+[[hooks]]
+stage = "build"
+command = "cargo"
+command_arguments = ["run", "--bin", "copy-bootstrap-icons"]

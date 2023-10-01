@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unofficial Carnegie Randomizer</title>
+    <base data-trunk-public-url />
+    <link rel="stylesheet" href="bootstrap-icons-v1.10.5/bootstrap-icons.css" />
+    <link data-trunk rel="css" href="static/bootstrap-v5.3.1/bootstrap.min.css" />
+    <link data-trunk rel="copy-file" href="static/bootstrap-v5.3.1/bootstrap.min.css.map" />
+    <link data-trunk rel="copy-file" href="static/bootstrap-v5.3.1/bootstrap.min.js.map" />
+    <link data-trunk rel="rust" data-bin="random-carnegie" />
+    <link data-trunk rel="icon" href="static/favicon.png" type="image/png" />
+    <link data-trunk rel="scss" href="static/styles.scss" />
+</head>
+<body>
+    <div class="app-wrap">
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    Unofficial Carnegie Randomizer
+                </a>
+            </div>
+        </nav>
+        <main class="container py-4" style="text-align: center">
+            <h2>Loading...</h2>
+            <span class="timed" style="display: none">
+                <br/>
+                If you see this for too long please (force) reload.<br/>
+                <small>(Force Reload: <i class="bi bi-apple"></i>: <i class="bi bi-shift"></i><i class="bi bi-command"></i>R, <i class="bi bi-windows"></i>: Ctrl+F5, <i class="bi bi-browser-safari"></i>: <i class="bi bi-option"></i><i class="bi bi-command"></i>R)</small>
+            </span>
+        </main>
+        <nav class="navbar sticky-bottom bg-body-tertiary">
+            <div class="container-fluid">
+                <b class="mb-0">
+                    Written by Alex.
+                </b>
+
+                <div class="ms-auto">
+                    Version: <link data-trunk rel="inline" href="target/generated/version.html" /><br/>
+                    <a
+                            href="https://github.com/alexkazik/random-carnegie"
+                            target="_blank"
+                            class="btn btn-dark btn-sm ms-4"
+                    >
+                        <i class="bi bi-github"></i> Source
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.querySelectorAll('.timed').forEach(function(element) {
+                element.style.display = 'block';
+            });
+        }, 15000)
+    </script>
+    <!--<script data-trunk src="static/popperjs-core-v2.11.8/popper.min.js"></script>-->
+    <script data-trunk src="static/bootstrap-v5.3.1/bootstrap.min.js"></script>
+</body>
+</html>
