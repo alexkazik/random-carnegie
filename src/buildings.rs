@@ -243,7 +243,7 @@ pub(crate) fn BuildingsPane(props: &Props) -> Html {
     html! {
         <>
         <div>
-            {"Tiles: "}
+            {"Department tiles: "}
             <div class="btn-group" role="group">
                 <input
                     type="radio"
@@ -281,7 +281,7 @@ pub(crate) fn BuildingsPane(props: &Props) -> Html {
         </div>
         if state.tiles == Tiles::Both {
             <div>
-                {"Types per row: "}
+                {"Different Departments per row: "}
                 <div class="btn-group" role="group">
                     <input
                         type="radio"
@@ -329,7 +329,7 @@ pub(crate) fn BuildingsPane(props: &Props) -> Html {
                 </div>
             </div>
             <div>
-                {"Permanent buildings per row: "}
+                {"Permanent Departments per row: "}
                 <div class="btn-group" role="group">
                     <input
                         type="radio"
