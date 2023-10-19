@@ -920,7 +920,7 @@ dependencies = [
 
 [[package]]
 name = "random-carnegie"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
  "getrandom",
  "gloo-history 0.2.1",
